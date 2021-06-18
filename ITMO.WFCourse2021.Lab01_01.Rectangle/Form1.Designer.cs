@@ -35,30 +35,33 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(97, 55);
+            this.button1.Location = new System.Drawing.Point(100, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 69);
+            this.button1.Size = new System.Drawing.Size(100, 200);
             this.button1.TabIndex = 0;
             this.button1.Text = "Border Style";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(294, 164);
+            this.button2.Location = new System.Drawing.Point(300, 150);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(157, 69);
+            this.button2.Size = new System.Drawing.Size(100, 200);
             this.button2.TabIndex = 1;
             this.button2.Text = "Resize";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(499, 264);
+            this.button3.Location = new System.Drawing.Point(500, 250);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 69);
+            this.button3.Size = new System.Drawing.Size(100, 200);
             this.button3.TabIndex = 2;
             this.button3.Text = "Opacity";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
