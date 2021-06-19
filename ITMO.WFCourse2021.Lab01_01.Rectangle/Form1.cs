@@ -31,5 +31,13 @@ namespace ITMO.WFCourse2021.Lab01_01.Rectangle
         {
             this.Opacity = 1;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            nForm myF2 = new nForm();
+            myF2.StartPosition = FormStartPosition.Manual;
+            myF2.Location = new Point(this.Location.X + this.Width, this.Location.Y);
+            myF2.Show();
+        }
     }
 }
