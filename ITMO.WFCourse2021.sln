@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_02.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_03.InheritedForm", "ITMO.WFCourse2021.Lab01_03.InheritedForm\ITMO.WFCourse2021.Lab01_03.InheritedForm.csproj", "{145D42CE-E02F-4B40-8F54-5EF593CB44BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_05.ControTask1.Ellipse", "ITMO.WFCourse2021.Lab01_05_1.Ellipse\ITMO.WFCourse2021.Lab01_05.ControTask1.Ellipse.csproj", "{F46BF41F-E4E7-4584-B8C1-143B5C8E7FCE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{145D42CE-E02F-4B40-8F54-5EF593CB44BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{145D42CE-E02F-4B40-8F54-5EF593CB44BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{145D42CE-E02F-4B40-8F54-5EF593CB44BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F46BF41F-E4E7-4584-B8C1-143B5C8E7FCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F46BF41F-E4E7-4584-B8C1-143B5C8E7FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F46BF41F-E4E7-4584-B8C1-143B5C8E7FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F46BF41F-E4E7-4584-B8C1-143B5C8E7FCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
