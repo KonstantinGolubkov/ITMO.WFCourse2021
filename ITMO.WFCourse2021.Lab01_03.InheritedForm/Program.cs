@@ -16,7 +16,7 @@ namespace ITMO.WFCourse2021.Lab01_03.InheritedForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new nForm());
         }
     }
 }
