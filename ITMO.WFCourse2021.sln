@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_02.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_03.InheritedForm", "ITMO.WFCourse2021.Lab01_03.InheritedForm\ITMO.WFCourse2021.Lab01_03.InheritedForm.csproj", "{145D42CE-E02F-4B40-8F54-5EF593CB44BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_05_1.Ellipse", "ITMO.WFCourse2021.Lab01_05_1.Ellipse\ITMO.WFCourse2021.Lab01_05_1.Ellipse.csproj", "{F46BF41F-E4E7-4584-B8C1-143B5C8E7FCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_05.ControTask1.Ellipse", "ITMO.WFCourse2021.Lab01_05_1.Ellipse\ITMO.WFCourse2021.Lab01_05.ControTask1.Ellipse.csproj", "{F46BF41F-E4E7-4584-B8C1-143B5C8E7FCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
