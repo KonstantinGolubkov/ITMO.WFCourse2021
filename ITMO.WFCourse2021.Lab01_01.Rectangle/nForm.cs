@@ -12,6 +12,13 @@ namespace ITMO.WFCourse2021.Lab01_01.Rectangle
 {
     public partial class nForm : Form
     {
+        private bool nclose = false;
+
+        public new void Close()
+        {
+            nclose = true; base.Close();
+        }
+
         public nForm()
         {
             InitializeComponent();
@@ -19,7 +26,8 @@ namespace ITMO.WFCourse2021.Lab01_01.Rectangle
 
         private void nForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (checkBoxClose.Checked)
+            //if (checkBoxClose.Checked)
+            if (nclose)
             {
                 return;
             }
@@ -33,6 +41,11 @@ namespace ITMO.WFCourse2021.Lab01_01.Rectangle
         private void checkBoxClose_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
