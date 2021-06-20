@@ -16,5 +16,11 @@ namespace ITMO.WFCourse2021.Lab01_01.Rectangle
         {
             InitializeComponent();
         }
+
+        private void nForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            Hide();
+        }
     }
 }
