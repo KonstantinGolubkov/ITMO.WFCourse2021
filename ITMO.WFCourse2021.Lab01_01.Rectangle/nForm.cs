@@ -19,8 +19,20 @@ namespace ITMO.WFCourse2021.Lab01_01.Rectangle
 
         private void nForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;
-            Hide();
+            if (checkBoxClose.Checked)
+            {
+                return;
+            }
+            else
+            {
+                e.Cancel = true;
+                Hide();
+            }
+        }
+
+        private void checkBoxClose_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

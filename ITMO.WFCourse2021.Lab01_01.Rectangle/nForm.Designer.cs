@@ -28,20 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.checkBoxClose = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
+            // 
+            // checkBoxClose
+            // 
+            this.checkBoxClose.AutoSize = true;
+            this.checkBoxClose.Location = new System.Drawing.Point(351, 68);
+            this.checkBoxClose.Name = "checkBoxClose";
+            this.checkBoxClose.Size = new System.Drawing.Size(100, 17);
+            this.checkBoxClose.TabIndex = 0;
+            this.checkBoxClose.Text = "checkBoxClose";
+            this.checkBoxClose.UseVisualStyleBackColor = true;
+            this.checkBoxClose.CheckedChanged += new System.EventHandler(this.checkBoxClose_CheckedChanged);
             // 
             // nForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBoxClose);
             this.Name = "nForm";
             this.Text = "nForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.nForm_FormClosing);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.CheckBox checkBoxClose;
     }
 }
