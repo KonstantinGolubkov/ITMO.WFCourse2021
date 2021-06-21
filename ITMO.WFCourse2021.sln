@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_03.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_05.ControlTask1.Ellipse", "ITMO.WFCourse2021.Lab01_05.ControlTask1.Ellipse\ITMO.WFCourse2021.Lab01_05.ControlTask1.Ellipse.csproj", "{0B98D163-A4F4-4589-A425-BBED3640A420}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab02_01.WinQuestion", "ITMO.WFCourse2021.Lab02_01.WinQuestion\ITMO.WFCourse2021.Lab02_01.WinQuestion.csproj", "{C50025A8-57AD-4F24-AABF-9DE99D0FE1CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0B98D163-A4F4-4589-A425-BBED3640A420}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B98D163-A4F4-4589-A425-BBED3640A420}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B98D163-A4F4-4589-A425-BBED3640A420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50025A8-57AD-4F24-AABF-9DE99D0FE1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50025A8-57AD-4F24-AABF-9DE99D0FE1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50025A8-57AD-4F24-AABF-9DE99D0FE1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50025A8-57AD-4F24-AABF-9DE99D0FE1CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
