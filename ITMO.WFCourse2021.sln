@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab02_06.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab02_07.RegistrationForm", "ITMO.WFCourse2021.Lab02_07.RegistrationForm\ITMO.WFCourse2021.Lab02_07.RegistrationForm.csproj", "{CCCAEC58-C093-4E75-8414-6A0E0A9E0D55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_05.ControlTask2.Rhomb", "ITMO.WFCourse2021.Lab01_05.ControlTask2.Rhomb\ITMO.WFCourse2021.Lab01_05.ControlTask2.Rhomb.csproj", "{02AC5BDA-3557-49DD-A415-13A5C5C4CC0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{CCCAEC58-C093-4E75-8414-6A0E0A9E0D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCCAEC58-C093-4E75-8414-6A0E0A9E0D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCCAEC58-C093-4E75-8414-6A0E0A9E0D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02AC5BDA-3557-49DD-A415-13A5C5C4CC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02AC5BDA-3557-49DD-A415-13A5C5C4CC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02AC5BDA-3557-49DD-A415-13A5C5C4CC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02AC5BDA-3557-49DD-A415-13A5C5C4CC0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
