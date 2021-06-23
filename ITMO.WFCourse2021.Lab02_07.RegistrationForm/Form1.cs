@@ -38,6 +38,13 @@ namespace ITMO.WFCourse2021.Lab02_07.RegistrationForm
             }
             else
             {
+                int lcv;
+                lcv = groupBox1.Controls.Count;// определяется количество элементов
+                while (lcv > 4)
+                {
+                    groupBox1.Controls.RemoveAt(lcv - 1);
+                    lcv -= 1;
+                }
             }
         }
     }
