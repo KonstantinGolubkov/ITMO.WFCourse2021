@@ -62,6 +62,10 @@ namespace ITMO.WFCourse2021.Lab02_08.RegForm.ValidatingInputValues
                     //для элемента TextBox1 недопустимыми значениями будут цифры 
             if (char.IsDigit(e.KeyChar))
             {
+                    //При ошибке ввода появляется мигающая иконка уведомления, 
+                    //при наведении на нее всплывает поясняющее сообщение об ошибке
+                errorProvider1.SetError(textBox1, "Must be letter");
+
                 e.Handled = true;
                 MessageBox.Show("Поле Name не может содержать цифры");
             }
