@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab01_05.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab02_09.ControlTask.BiblWorm.BookMagazine", "ITMO.WFCourse2021.Lab02_09.ControlTask.BiblWorm.BookMagazine\ITMO.WFCourse2021.Lab02_09.ControlTask.BiblWorm.BookMagazine.csproj", "{C724A213-6797-42EF-BF80-12DAFE9C0672}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMO.WFCourse2021.Lab02_08.RegForm.ValidatingInputValues", "ITMO.WFCourse2021.Lab02_08.RegForm.ValidatingInputValues\ITMO.WFCourse2021.Lab02_08.RegForm.ValidatingInputValues.csproj", "{72E71261-3950-4851-B387-E7C7FD8422F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{C724A213-6797-42EF-BF80-12DAFE9C0672}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C724A213-6797-42EF-BF80-12DAFE9C0672}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C724A213-6797-42EF-BF80-12DAFE9C0672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E71261-3950-4851-B387-E7C7FD8422F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E71261-3950-4851-B387-E7C7FD8422F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E71261-3950-4851-B387-E7C7FD8422F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E71261-3950-4851-B387-E7C7FD8422F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
