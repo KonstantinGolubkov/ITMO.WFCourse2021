@@ -37,9 +37,11 @@ namespace ITMO.WFCourse2021.Lab02_08.RegForm.ValidatingInputValues
                 txt.TabIndex = 1;
                 txt.Text = "";
                 groupBox1.Controls.Add(txt);
-                
-                        //для появляющегося дополнительного поля "PIN2" недопустимыми значениями будут буквы,
-                txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+
+                //для появляющегося дополнительного поля "PIN2" недопустимыми значениями будут буквы,
+                //txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+                //txt.Validating += new System.ComponentModel.CancelEventHandler (this.textBox2_Validating);
+
             }
             else
             {
@@ -65,13 +67,34 @@ namespace ITMO.WFCourse2021.Lab02_08.RegForm.ValidatingInputValues
             }
         }
 
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        //private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    //для элемента TextBox2 недопустимыми значениями будут буквы,
+        //    if (!char.IsDigit(e.KeyChar))
+        //    {
+        //        e.Handled = true;
+        //        MessageBox.Show("Поле PIN не может содержать буквы");
+        //    }
+        //}
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
         {
-                    //для элемента TextBox2 недопустимыми значениями будут буквы,
-            if (!char.IsDigit(e.KeyChar))
+            if (textBox2.Text == "")
             {
-                e.Handled = true;
-                MessageBox.Show("Поле PIN не может содержать буквы");
+                e.Cancel = false;
+            }
+            else
+            {
+                try
+                {
+                    double.Parse(textBox2.Text);
+                    e.Cancel = false;
+                }
+                catch
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("Поле PIN не может содержать буквы");
+                }
             }
         }
     }
