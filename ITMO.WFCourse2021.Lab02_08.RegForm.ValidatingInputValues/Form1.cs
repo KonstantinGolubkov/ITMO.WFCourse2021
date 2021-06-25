@@ -37,6 +37,9 @@ namespace ITMO.WFCourse2021.Lab02_08.RegForm.ValidatingInputValues
                 txt.TabIndex = 1;
                 txt.Text = "";
                 groupBox1.Controls.Add(txt);
+                
+                        //для появляющегося дополнительного поля "PIN2" недопустимыми значениями будут буквы,
+                txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             }
             else
             {
@@ -49,6 +52,26 @@ namespace ITMO.WFCourse2021.Lab02_08.RegForm.ValidatingInputValues
                     groupBox1.Controls.RemoveAt(lcv - 1);
                     lcv -= 1;
                 }
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+                    //для элемента TextBox1 недопустимыми значениями будут цифры 
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле Name не может содержать цифры");
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+                    //для элемента TextBox2 недопустимыми значениями будут буквы,
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле PIN не может содержать буквы");
             }
         }
     }
