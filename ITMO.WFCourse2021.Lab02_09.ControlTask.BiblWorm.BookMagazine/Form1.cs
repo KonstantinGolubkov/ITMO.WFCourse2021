@@ -12,6 +12,7 @@ namespace ITMO.WFCourse2021.Lab02_09.ControlTask.BiblWorm.BookMagazine
 {
     public partial class Form1 : Form
     {
+        //создаем список для хранения единиц библиотеки
         List<MyClass.Item> its = new List<MyClass.Item>();
 
         public Form1()
@@ -19,6 +20,7 @@ namespace ITMO.WFCourse2021.Lab02_09.ControlTask.BiblWorm.BookMagazine
             InitializeComponent();
         }
 
+        //Вкладка Книги - свойства ЭУ
         public string Author // автор
         {
             get { return textBox1.Text; }
@@ -70,37 +72,88 @@ namespace ITMO.WFCourse2021.Lab02_09.ControlTask.BiblWorm.BookMagazine
             set { checkBox3.Checked = value; }
         }
 
+        //Вкладка Книги - обработчик события клика по кнопке "Добавить"
         private void button1_Click(object sender, EventArgs e)
         {
-                //Создаем объект класса Book
+            //Создаем объект класса Book, передав в конструктор свойства формы
             MyClass.Book b = new MyClass.Book(Author, Title, PublishHouse, Page, Year, InvNumber, Existence);
-                //проверка возврата книги в срок
+                
+            //проверка возврата книги в срок
+            //и расчет стоимости с учетом срока пользования книгой
+            //и добавить книгу в список
             if (ReturnTime)
                 b.ReturnSrok();
-                //расчет стоимости с учетом срока пользования
-            b.PriceBook(PeriodUse);
-                //добавляем книгу в список
-            its.Add(b);
-                //очистка полей ввода для новой информации
+                b.PriceBook(PeriodUse);
+                its.Add(b);
+
+            //очистка полей ввода для новой информации
             Author = Title = PublishHouse = "";
             Page = InvNumber = PeriodUse = 1;
             Year = 1700;
             Existence = ReturnTime = false;
         }
 
+        //Общий вывод для книг и журналов
+        //Обработчик события клика по кнопке "Посмотреть
         private void button2_Click(object sender, EventArgs e)
         {
-                //проверка состояния флажка сортировки
+            //проверка состояния флажка сортировки
             if (SortInvNumber)
                 its.Sort();
-                //для вывода информации создаем строку класса StringBuilder
+
+            //организация вывода информации
+            //создаем строку класса StringBuilder
+            //с помощью цикла строим строку с информацией о единице хранени
             StringBuilder sb = new StringBuilder();
             foreach (MyClass.Item item in its)
             {
                 sb.Append("\n" + item.ToString());
             }
-                //вывод строки в элемент RichTextBox1
+                
+            //выводим строки в элемент RichTextBox1
             richTextBox1.Text = sb.ToString();
+        }
+
+        //Вкладка Журналы - свойства ЭУ
+        public string TitleMagazine // Название
+        {
+            get { return textBox4.Text; }
+            set { textBox4.Text = value; }
+        }
+        public int VolumeMagazine // Том
+        {
+            get { return (int)numericUpDown5.Value; }
+            set { numericUpDown5.Value = value; }
+        }
+        public int NumberMagazine // Номер
+        {
+            get { return (int)numericUpDown6.Value; }
+            set { numericUpDown6.Value = value; }
+        }
+        public int YearMagazine // Год выпуска
+        {
+            get { return (int)numericUpDown7.Value; }
+            set { numericUpDown7.Value = value; }
+        }
+        public int InvNumberMagazine // Инвентарный номер
+        {
+            get { return (int)numericUpDown8.Value; }
+            set { numericUpDown8.Value = value; }
+        }
+
+        //Вкладка Журналы - обработчик события клика по кнопке "Добавить"
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //создаем объект класса Magazine, передав в конструктор свойства формы
+            //и добавляем Журнал в список
+            MyClass.Magazine b = new MyClass.Magazine(VolumeMagazine, NumberMagazine, TitleMagazine, YearMagazine, InvNumberMagazine, Existence);
+            its.Add(b);
+
+            TitleMagazine = "";
+            VolumeMagazine = NumberMagazine = InvNumberMagazine = 1;
+            Year = 1900;
+            Existence = ReturnTime = false;
+
         }
     }
 }
